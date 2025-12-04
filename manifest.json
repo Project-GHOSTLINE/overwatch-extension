@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Overwatch v6.2 - MARGILL FIRST + PEDRO",
-  "version": "6.2.0",
+  "name": "Overwatch v6.3 - VERCEL CLOUD",
+  "version": "6.3.0",
   "description": "Capture Flinks/Inverite/Margill et envoie au dashboard SAR Analysis",
   "permissions": ["activeTab", "storage"],
   "host_permissions": [
     "https://dashboard.flinks.com/*",
-    "http://localhost:3000/*",
+    "https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/*",
+    "https://*.vercel.app/*",
     "*://inverite.com/*",
     "*://*.inverite.com/*",
     "https://argentrapide.margill.com/*",

@@ -1,5 +1,5 @@
 (function () {
-  console.log("Overwatch v6.2 - MARGILL FIRST + PEDRO (Windows Compatible)");
+  console.log("Overwatch v6.3 - MARGILL FIRST + PEDRO (VERCEL)");
 
   // ============================================
   // TERMINAL COMPONENT
@@ -74,7 +74,7 @@
       justify-content: space-between;
       align-items: center;
     ">
-      <span>[*] OVERWATCH v6.2</span>
+      <span>[*] OVERWATCH v6.3 VERCEL</span>
       <div style="display: flex; gap: 5px;">
         <button id="terminal-pedro" style="
           background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%);
@@ -180,7 +180,7 @@
       logToTerminal('[>] Envoi des logs a Pedro...', 'info');
       logToTerminal('[>] ' + logData.logs.length + ' lignes de log', 'data');
 
-      var response = await fetch('http://localhost:3000/api/pedro-analyze', {
+      var response = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/pedro-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(logData)
@@ -303,7 +303,7 @@
   var isFlinks = window.location.hostname.indexOf('flinks.com') !== -1;
   var isMargill = window.location.hostname.indexOf('margill.com') !== -1;
 
-  logToTerminal('[+] Overwatch v6.2 MARGILL FIRST + PEDRO initialise', 'success');
+  logToTerminal('[+] Overwatch v6.3 VERCEL initialise', 'success');
   logToTerminal('[>] URL: ' + window.location.hostname, 'info');
   logToTerminal('[>] Mode: ' + (isMargill ? 'MARGILL' : isInverite ? 'INVERITE' : isFlinks ? 'FLINKS' : 'INCONNU'), 'data');
 
@@ -522,7 +522,7 @@
           logToTerminal('[>] Sauvegarde Margill uniquement...', 'info');
 
           // Sauvegarder uniquement Margill
-          var response = await fetch('http://localhost:3000/api/save-dossier', {
+          var response = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/save-dossier', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -555,7 +555,7 @@
         // ETAPE 3: Recuperer les donnees Inverite via proxy
         logToTerminal('[3] Etape 3: Recuperation Inverite...', 'info');
 
-        var proxyResponse = await fetch('http://localhost:3000/api/proxy/inverite', {
+        var proxyResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/proxy/inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ guid: inveriteInfo.guid })
@@ -586,7 +586,7 @@
         // ETAPE 4: Sauvegarder les deux JSON dans un dossier
         logToTerminal('[4] Etape 4: Sauvegarde dossier...', 'info');
 
-        var saveResponse = await fetch('http://localhost:3000/api/save-dossier', {
+        var saveResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/save-dossier', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -611,7 +611,7 @@
         // ETAPE 5: Lancer l'analyse automatique
         logToTerminal('[5] Etape 5: Analyse automatique...', 'info');
 
-        var analyzeResponse = await fetch('http://localhost:3000/api/analyze-inverite', {
+        var analyzeResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/analyze-inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(inveriteData)
@@ -629,7 +629,7 @@
 
             // Ouvrir le rapport
             logToTerminal('[>] Ouverture rapport...', 'info');
-            window.open('http://localhost:3000/rapport-simple/' + analyzeResult.id, '_blank');
+            window.open('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/rapport-simple/' + analyzeResult.id, '_blank');
           }
         }
 
@@ -709,7 +709,7 @@
         btn.innerText = "[...] ANALYSE...";
         btn.disabled = true;
 
-        var proxyResponse = await fetch('http://localhost:3000/api/proxy/inverite', {
+        var proxyResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/proxy/inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ guid: guid })
@@ -718,7 +718,7 @@
         var proxyResult = await proxyResponse.json();
         var inveriteData = proxyResult.data;
 
-        var analyzeResponse = await fetch('http://localhost:3000/api/analyze-inverite', {
+        var analyzeResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/analyze-inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(inveriteData)
@@ -728,7 +728,7 @@
 
         if (analyzeResult.success) {
           logToTerminal('[+] Score: ' + analyzeResult.score + '/100', 'success');
-          window.open('http://localhost:3000/rapport-simple/' + analyzeResult.id, '_blank');
+          window.open('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/rapport-simple/' + analyzeResult.id, '_blank');
         }
 
         btn.innerText = "[OK] TERMINE";
@@ -791,7 +791,7 @@
 
         var lendingText = document.body.innerText;
 
-        var response = await fetch('http://localhost:3000/api/flinks-extension', {
+        var response = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/flinks-extension', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ overviewText: overviewText, lendingText: lendingText })
@@ -801,7 +801,7 @@
 
         if (result.success && result.id) {
           logToTerminal('[+] Dossier: ' + result.id, 'success');
-          window.open('http://localhost:3000/rapport-simple/' + result.id, '_blank');
+          window.open('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/rapport-simple/' + result.id, '_blank');
         }
 
         btn.innerText = "[OK] TERMINE";
