@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Overwatch v6.2 - MARGILL FIRST + PEDRO",
+  "version": "6.2.0",
+  "description": "Capture Flinks/Inverite/Margill et envoie au dashboard SAR Analysis",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://dashboard.flinks.com/*",
+    "http://localhost:3000/*",
+    "*://inverite.com/*",
+    "*://*.inverite.com/*",
+    "https://argentrapide.margill.com/*",
+    "*://*.margill.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://dashboard.flinks.com/*",
+        "*://inverite.com/*",
+        "*://*.inverite.com/*",
+        "https://argentrapide.margill.com/*",
+        "*://*.margill.com/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
