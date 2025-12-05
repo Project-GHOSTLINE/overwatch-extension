@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Overwatch v7 - PRODUCTION",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Capture Flinks/Inverite/Margill et envoie au dashboard FricTrak",
   "permissions": ["activeTab", "storage"],
   "host_permissions": [

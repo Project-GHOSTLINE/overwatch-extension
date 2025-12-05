@@ -670,12 +670,14 @@
               logToTerminal('[X] ' + analyzeResult.knockOuts + ' knock-out(s)', 'error');
             }
 
-            // Sauvegarder sur Vercel avant d'ouvrir
+            // Sauvegarder sur Vercel avant d'ouvrir (inclure margillData!)
             logToTerminal('[>] Sauvegarde rapport...', 'info');
             var saveData = {
               ...analyzeResult.data,
               id: analyzeResult.id,
-              created_at: new Date().toISOString()
+              created_at: new Date().toISOString(),
+              margill_data: margillData,
+              margill_id: demandeNumber
             };
             await fetch(VERCEL_APP + '/api/save-temp', {
               method: 'POST',
