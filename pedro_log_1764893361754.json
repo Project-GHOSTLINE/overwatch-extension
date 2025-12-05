@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-12-05T00:09:21.753Z",
+  "url": "https://argentrapide.margill.com/admin/loan_approbation_page.aspx?demande=rN51268",
+  "hostname": "argentrapide.margill.com",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+  "logs": [
+    "[19:09:15] [+] Overwatch v6.3 VERCEL initialise",
+    "[19:09:15] [>] URL: argentrapide.margill.com",
+    "[19:09:15] [>] Mode: MARGILL",
+    "[19:09:15] [*] Mode MARGILL FIRST active",
+    "[19:09:15] [*] Mode MARGILL FIRST active",
+    "[19:09:15] [>] Reference: rN51268",
+    "[19:09:15] [+] Bouton OVERWATCH injecte",
+    "[19:09:15] [>] Cliquez pour lancer extraction",
+    "[19:09:19] [*] DEBUT EXTRACTION COMPLETE...",
+    "[19:09:19] [1] Etape 1: Scraping Margill...",
+    "[19:09:19] [>] 90 champ(s) detecte(s)",
+    "[19:09:19] [>] Prenom: remy",
+    "[19:09:19] [>] Nom: remy",
+    "[19:09:19] [+] Margill: 90 champs",
+    "[19:09:19] [2] Etape 2: Recherche lien Inverite...",
+    "[19:09:19] [+] Inverite trouve: 93846E48...",
+    "[19:09:19] [3] Etape 3: Recuperation Inverite...",
+    "[19:09:20] [X] ERREUR: Failed to fetch",
+    "[19:09:21] [>] Envoi des logs a Pedro...",
+    "[19:09:21] [>] 18 lignes de log",
+    "[19:09:21] [X] ERREUR PEDRO: Failed to fetch",
+    "[19:09:21] [PEDRO] (;_;) Je suis triste...",
+    "[19:09:21] [>] Telechargement local du log..."
+  ],
+  "raw_log": "[19:09:15] [+] Overwatch v6.3 VERCEL initialise\n[19:09:15] [>] URL: argentrapide.margill.com\n[19:09:15] [>] Mode: MARGILL\n[19:09:15] [*] Mode MARGILL FIRST active\n[19:09:15] [*] Mode MARGILL FIRST active\n[19:09:15] [>] Reference: rN51268\n[19:09:15] [+] Bouton OVERWATCH injecte\n[19:09:15] [>] Cliquez pour lancer extraction\n[19:09:19] [*] DEBUT EXTRACTION COMPLETE...\n[19:09:19] [1] Etape 1: Scraping Margill...\n[19:09:19] [>] 90 champ(s) detecte(s)\n[19:09:19] [>] Prenom: remy\n[19:09:19] [>] Nom: remy\n[19:09:19] [+] Margill: 90 champs\n[19:09:19] [2] Etape 2: Recherche lien Inverite...\n[19:09:19] [+] Inverite trouve: 93846E48...\n[19:09:19] [3] Etape 3: Recuperation Inverite...\n[19:09:20] [X] ERREUR: Failed to fetch\n[19:09:21] [>] Envoi des logs a Pedro...\n[19:09:21] [>] 18 lignes de log\n[19:09:21] [X] ERREUR PEDRO: Failed to fetch\n[19:09:21] [PEDRO] (;_;) Je suis triste...\n[19:09:21] [>] Telechargement local du log..."
+}

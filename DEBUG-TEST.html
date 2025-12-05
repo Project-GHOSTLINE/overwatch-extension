@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OVERWATCH DEBUG TEST</title>
+  <style>
+    body { background: #0a0a0a; color: #00ff00; font-family: monospace; padding: 20px; }
+    h1 { color: #ff00ff; }
+    .test { background: #1a1a1a; padding: 15px; margin: 10px 0; border-radius: 8px; border: 1px solid #333; }
+    .test-name { font-weight: bold; color: #00aaff; font-size: 16px; }
+    .status { padding: 5px 10px; border-radius: 4px; margin-left: 10px; }
+    .success { background: #10b981; color: #000; }
+    .error { background: #ef4444; color: #fff; }
+    .pending { background: #666; color: #fff; }
+    .details { margin-top: 10px; padding: 10px; background: #0d0d0d; border-radius: 4px; font-size: 12px; white-space: pre-wrap; word-break: break-all; }
+    button { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 15px 30px; font-size: 16px; cursor: pointer; border-radius: 8px; margin: 10px 5px; }
+    button:hover { opacity: 0.9; }
+    #results { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>[*] OVERWATCH v6.4 - DEBUG MODE</h1>
+
+  <div>
+    <button onclick="runAllTests()">LANCER TOUS LES TESTS</button>
+    <button onclick="clearResults()">EFFACER</button>
+  </div>
+
+  <div id="results"></div>
+
+  <script>
+    const RAILWAY_API = 'https://frictrak-production.up.railway.app';
+    const VERCEL_APP = 'https://frictrak.vercel.app';
+
+    const results = document.getElementById('results');
+
+    function log(testName, status, details) {
+      const div = document.createElement('div');
+      div.className = 'test';
+      div.innerHTML = `
+        <span class="test-name">${testName}</span>
+        <span class="status ${status}">${status.toUpperCase()}</span>
+        <div class="details">${JSON.stringify(details, null, 2)}</div>
+      `;
+      results.appendChild(div);
+    }
+
+    function clearResults() {
+      results.innerHTML = '';
+    }
+
+    async function testEndpoint(name, url, method, body) {
+      const startTime = Date.now();
+      try {
+        console.log(`[TEST] ${name} - ${method} ${url}`);
+
+        const options = {
+          method: method,
+          headers: { 'Content-Type': 'application/json' }
+        };
+
+        if (body) {
+          options.body = JSON.stringify(body);
+        }
+
+        const response = await fetch(url, options);
+        const duration = Date.now() - startTime;
+
+        let data;
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.includes('application/json')) {
+          data = await response.json();
+        } else {
+          data = await response.text();
+        }
+
+        const result = {
+          url: url,
+          method: method,
+          status: response.status,
+          statusText: response.statusText,
+          duration: duration + 'ms',
+          headers: {
+            'content-type': contentType,
+            'access-control-allow-origin': response.headers.get('access-control-allow-origin')
+          },
+          body: body,
+          response: data
+        };
+
+        if (response.ok) {
+          log(name, 'success', result);
+        } else {
+          log(name, 'error', result);
+        }
+
+        return { success: response.ok, result };
+
+      } catch (error) {
+        const duration = Date.now() - startTime;
+        const errorResult = {
+          url: url,
+          method: method,
+          duration: duration + 'ms',
+          error: error.message,
+          errorType: error.name,
+          stack: error.stack
+        };
+        log(name, 'error', errorResult);
+        return { success: false, error: errorResult };
+      }
+    }
+
+    async function runAllTests() {
+      clearResults();
+
+      log('CONFIG', 'pending', {
+        RAILWAY_API: RAILWAY_API,
+        VERCEL_APP: VERCEL_APP,
+        userAgent: navigator.userAgent,
+        timestamp: new Date().toISOString()
+      });
+
+      // Test 1: Railway Health
+      await testEndpoint(
+        'TEST 1: Railway Health',
+        RAILWAY_API + '/health',
+        'GET',
+        null
+      );
+
+      // Test 2: Railway Root
+      await testEndpoint(
+        'TEST 2: Railway Root API',
+        RAILWAY_API + '/',
+        'GET',
+        null
+      );
+
+      // Test 3: Vercel Health (page)
+      await testEndpoint(
+        'TEST 3: Vercel Frontend',
+        VERCEL_APP,
+        'GET',
+        null
+      );
+
+      // Test 4: Railway save-dossier
+      await testEndpoint(
+        'TEST 4: Railway /api/save-dossier',
+        RAILWAY_API + '/api/save-dossier',
+        'POST',
+        {
+          reference: 'DEBUG_TEST_' + Date.now(),
+          prenom: 'Debug',
+          nom: 'Test',
+          margillData: { test: true, fields: { champ1: 'valeur1' } },
+          inveriteData: null
+        }
+      );
+
+      // Test 5: Railway pedro-analyze
+      await testEndpoint(
+        'TEST 5: Railway /api/pedro-analyze',
+        RAILWAY_API + '/api/pedro-analyze',
+        'POST',
+        {
+          logs: ['[DEBUG] Test log 1', '[DEBUG] Test log 2'],
+          url: 'https://debug-test.local',
+          timestamp: new Date().toISOString()
+        }
+      );
+
+      // Test 6: Railway analyze-inverite
+      await testEndpoint(
+        'TEST 6: Railway /api/analyze-inverite',
+        RAILWAY_API + '/api/analyze-inverite',
+        'POST',
+        {
+          name: 'Debug Client',
+          accounts: [{
+            transactions: [
+              { description: 'SALAIRE', amount: 2000 },
+              { description: 'LOYER', amount: -800 }
+            ]
+          }]
+        }
+      );
+
+      // Test 7: Vercel proxy/inverite (expect 500 without valid GUID)
+      await testEndpoint(
+        'TEST 7: Vercel /api/proxy/inverite',
+        VERCEL_APP + '/api/proxy/inverite',
+        'POST',
+        { guid: 'DEBUG-INVALID-GUID' }
+      );
+
+      // Test 8: Railway preteurs-list
+      await testEndpoint(
+        'TEST 8: Railway /api/preteurs-list',
+        RAILWAY_API + '/api/preteurs-list',
+        'GET',
+        null
+      );
+
+      log('TESTS TERMINÉS', 'success', {
+        total: 8,
+        timestamp: new Date().toISOString()
+      });
+    }
+  </script>
+</body>
+</html>

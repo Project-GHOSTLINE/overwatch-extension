@@ -548,6 +548,24 @@
             throw new Error(result.error || 'Erreur sauvegarde');
           }
 
+          // Sauvegarder Margill data sur Vercel aussi
+          try {
+            await fetch(VERCEL_APP + '/api/margill-data', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                reference: demandeNumber,
+                client: (margillData.client.prenom || '') + ' ' + (margillData.client.nom || ''),
+                fields: margillData.fields,
+                raw_text: margillData.raw_text,
+                scraped_at: margillData.scraped_at
+              })
+            });
+            logToTerminal('[+] Margill sauvegarde sur Vercel', 'success');
+          } catch (e) {
+            logToTerminal('[!] Margill Vercel: ' + e.message, 'warning');
+          }
+
           if (btn) {
             btn.innerText = "[OK] MARGILL SEUL";
             btn.style.background = "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)";
@@ -613,6 +631,24 @@
 
         logToTerminal('[+] Dossier cree: ' + saveResult.folderName, 'success');
         logToTerminal('[>] Fichiers: margill.json + inverite.json', 'data');
+
+        // Sauvegarder Margill data sur Vercel aussi
+        try {
+          await fetch(VERCEL_APP + '/api/margill-data', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              reference: demandeNumber,
+              client: (margillData.client.prenom || '') + ' ' + (margillData.client.nom || ''),
+              fields: margillData.fields,
+              raw_text: margillData.raw_text,
+              scraped_at: margillData.scraped_at
+            })
+          });
+          logToTerminal('[+] Margill sauvegarde sur Vercel', 'success');
+        } catch (e) {
+          logToTerminal('[!] Margill Vercel: ' + e.message, 'warning');
+        }
 
         // ETAPE 5: Lancer l'analyse automatique
         logToTerminal('[5] Etape 5: Analyse automatique...', 'info');

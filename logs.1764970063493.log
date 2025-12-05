@@ -1,0 +1,1016 @@
+2025-12-04T21:58:37.900882989Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T21:58:37.900889071Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:37.900895145Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T21:58:37.900901551Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T21:58:37.900907511Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T21:58:37.900912827Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T21:58:37.900918024Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T21:58:37.900923963Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T21:58:37.900930699Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T21:58:37.900939797Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T21:58:37.903311887Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T21:58:37.903316558Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T21:58:37.903322038Z [err]  [2025-12-04 21:58:37 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T21:58:37.903327134Z [err]  [2025-12-04 21:58:37 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T21:58:37.903331944Z [err]  [2025-12-04 21:58:37 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T21:58:38.860249759Z [inf]  Starting FRICTRAK API...
+2025-12-04T21:58:38.860255351Z [inf]  PORT: 8080
+2025-12-04T21:58:38.966453755Z [err]  [2025-12-04 21:58:38 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T21:58:38.966464819Z [err]  [2025-12-04 21:58:38 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T21:58:38.966474052Z [err]  [2025-12-04 21:58:38 +0000] [1] [INFO] Using worker: sync
+2025-12-04T21:58:38.966481318Z [err]  [2025-12-04 21:58:38 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T21:58:39.096968366Z [err]  [2025-12-04 21:58:39 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T21:58:39.096971189Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:39.096978431Z [err]  Traceback (most recent call last):
+2025-12-04T21:58:39.096984747Z [err]      self.callable = self.load()
+2025-12-04T21:58:39.096985969Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T21:58:39.096992850Z [err]      worker.init_process()
+2025-12-04T21:58:39.096996873Z [err]                      ^^^^^^^^^^^
+2025-12-04T21:58:39.097001729Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T21:58:39.097004518Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T21:58:39.097010309Z [err]      self.load_wsgi()
+2025-12-04T21:58:39.097010629Z [err]      return self.load_wsgiapp()
+2025-12-04T21:58:39.097017418Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T21:58:39.097021238Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:39.097025227Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T21:58:39.097027744Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T21:58:39.097033108Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T21:58:39.097035149Z [err]      return util.import_app(self.app_uri)
+2025-12-04T21:58:39.097040085Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T21:58:39.097053770Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:39.097059182Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T21:58:39.097064462Z [err]      mod = importlib.import_module(module)
+2025-12-04T21:58:39.098707956Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T21:58:39.098716139Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T21:58:39.098717629Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T21:58:39.098723773Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:39.098725903Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T21:58:39.098728958Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T21:58:39.098733694Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T21:58:39.098733755Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T21:58:39.098739057Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T21:58:39.098743316Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T21:58:39.098747610Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T21:58:39.098751672Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T21:58:39.098756178Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T21:58:39.098760477Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T21:58:39.098764626Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T21:58:39.098769001Z [err]  [2025-12-04 21:58:39 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T21:58:39.098772883Z [inf]  📊 STATISTIQUES:
+2025-12-04T21:58:39.156812385Z [err]  [2025-12-04 21:58:39 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T21:58:39.156818268Z [err]  [2025-12-04 21:58:39 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T21:58:39.156824185Z [err]  [2025-12-04 21:58:39 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T21:58:41.029056948Z [inf]  Starting FRICTRAK API...
+2025-12-04T21:58:41.029065256Z [inf]  PORT: 8080
+2025-12-04T21:58:41.138833111Z [err]  [2025-12-04 21:58:41 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T21:58:41.138838978Z [err]  [2025-12-04 21:58:41 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T21:58:41.138844335Z [err]  [2025-12-04 21:58:41 +0000] [1] [INFO] Using worker: sync
+2025-12-04T21:58:41.138850782Z [err]  [2025-12-04 21:58:41 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T21:58:41.377043204Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T21:58:41.377051701Z [err]      mod = importlib.import_module(module)
+2025-12-04T21:58:41.377056930Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:41.377062806Z [err]  [2025-12-04 21:58:41 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T21:58:41.377072037Z [err]  Traceback (most recent call last):
+2025-12-04T21:58:41.377080896Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T21:58:41.377085711Z [err]      worker.init_process()
+2025-12-04T21:58:41.377090742Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T21:58:41.377095666Z [err]      self.load_wsgi()
+2025-12-04T21:58:41.377100493Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T21:58:41.377104947Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T21:58:41.377109722Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T21:58:41.377115352Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T21:58:41.377119869Z [err]      self.callable = self.load()
+2025-12-04T21:58:41.377124591Z [err]                      ^^^^^^^^^^^
+2025-12-04T21:58:41.377129821Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T21:58:41.377134191Z [err]      return self.load_wsgiapp()
+2025-12-04T21:58:41.377138783Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:41.377143563Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T21:58:41.377151214Z [err]      return util.import_app(self.app_uri)
+2025-12-04T21:58:41.377156433Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:41.379449302Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T21:58:41.379471276Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T21:58:41.379478506Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:41.379485547Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T21:58:41.379493869Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T21:58:41.379501234Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T21:58:41.379510260Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T21:58:41.379517151Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T21:58:41.379524187Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T21:58:41.379532100Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T21:58:41.379539034Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T21:58:41.379545333Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T21:58:41.379552149Z [err]  [2025-12-04 21:58:41 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T21:58:41.379562722Z [inf]  📊 STATISTIQUES:
+2025-12-04T21:58:41.379569562Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T21:58:41.379576373Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T21:58:41.379582997Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T21:58:41.422020088Z [err]  [2025-12-04 21:58:41 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T21:58:41.422024887Z [err]  [2025-12-04 21:58:41 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T21:58:41.422029899Z [err]  [2025-12-04 21:58:41 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T21:58:42.866624630Z [inf]  Starting FRICTRAK API...
+2025-12-04T21:58:42.866628447Z [inf]  PORT: 8080
+2025-12-04T21:58:42.964265729Z [err]  [2025-12-04 21:58:42 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T21:58:42.964274039Z [err]  [2025-12-04 21:58:42 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T21:58:42.964279435Z [err]  [2025-12-04 21:58:42 +0000] [1] [INFO] Using worker: sync
+2025-12-04T21:58:42.964284148Z [err]  [2025-12-04 21:58:42 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T21:58:43.179002542Z [err]  [2025-12-04 21:58:43 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T21:58:43.179011956Z [err]  Traceback (most recent call last):
+2025-12-04T21:58:43.179017744Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T21:58:43.179023472Z [err]      worker.init_process()
+2025-12-04T21:58:43.179028807Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T21:58:43.179034904Z [err]      self.load_wsgi()
+2025-12-04T21:58:43.179040712Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T21:58:43.179045667Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T21:58:43.179050272Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T21:58:43.179055354Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T21:58:43.179059934Z [err]      self.callable = self.load()
+2025-12-04T21:58:43.179065214Z [err]                      ^^^^^^^^^^^
+2025-12-04T21:58:43.179069784Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T21:58:43.179074206Z [err]      return self.load_wsgiapp()
+2025-12-04T21:58:43.179079129Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:43.179083907Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T21:58:43.179090416Z [err]      return util.import_app(self.app_uri)
+2025-12-04T21:58:43.179097067Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:43.179103345Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T21:58:43.179109953Z [err]      mod = importlib.import_module(module)
+2025-12-04T21:58:43.179116513Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:43.180526565Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T21:58:43.180533412Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T21:58:43.180533733Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T21:58:43.180538698Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:43.180543908Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T21:58:43.180544476Z [err]  [2025-12-04 21:58:43 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T21:58:43.180548897Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T21:58:43.180553614Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T21:58:43.180554374Z [inf]  📊 STATISTIQUES:
+2025-12-04T21:58:43.180558394Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T21:58:43.180561061Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T21:58:43.180565284Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T21:58:43.180567564Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T21:58:43.180571127Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T21:58:43.180575314Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T21:58:43.180577436Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T21:58:43.180581714Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T21:58:43.241489085Z [err]  [2025-12-04 21:58:43 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T21:58:43.241497881Z [err]  [2025-12-04 21:58:43 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T21:58:43.241504214Z [err]  [2025-12-04 21:58:43 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T21:58:44.501408795Z [inf]  Starting FRICTRAK API...
+2025-12-04T21:58:44.501414355Z [inf]  PORT: 8080
+2025-12-04T21:58:45.051000602Z [err]  Traceback (most recent call last):
+2025-12-04T21:58:45.051010315Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T21:58:45.051019094Z [err]      worker.init_process()
+2025-12-04T21:58:45.051023992Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T21:58:45.051035183Z [err]      self.load_wsgi()
+2025-12-04T21:58:45.051041750Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T21:58:45.051046813Z [err]      self.callable = self.load()
+2025-12-04T21:58:45.051047371Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T21:58:45.051052936Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T21:58:45.051059045Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T21:58:45.051059468Z [err]                      ^^^^^^^^^^^
+2025-12-04T21:58:45.051068389Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T21:58:45.051073802Z [err]      return self.load_wsgiapp()
+2025-12-04T21:58:45.051078424Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:45.051083738Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T21:58:45.051135119Z [err]  [2025-12-04 21:58:44 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T21:58:45.051141327Z [err]  [2025-12-04 21:58:44 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T21:58:45.051148518Z [err]  [2025-12-04 21:58:44 +0000] [1] [INFO] Using worker: sync
+2025-12-04T21:58:45.051157874Z [err]  [2025-12-04 21:58:44 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T21:58:45.051164238Z [err]  [2025-12-04 21:58:44 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T21:58:45.053207260Z [err]  [2025-12-04 21:58:44 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T21:58:45.053208397Z [err]      return util.import_app(self.app_uri)
+2025-12-04T21:58:45.053221353Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:45.053224327Z [err]  [2025-12-04 21:58:44 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T21:58:45.053230626Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T21:58:45.053235069Z [err]  [2025-12-04 21:58:44 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T21:58:45.053241976Z [err]      mod = importlib.import_module(module)
+2025-12-04T21:58:45.053248001Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:45.053254418Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T21:58:45.053262909Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T21:58:45.053275388Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:45.053282608Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T21:58:45.053290533Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T21:58:45.053291871Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T21:58:45.053297671Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T21:58:45.053303309Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T21:58:45.053306611Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T21:58:45.053312113Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T21:58:45.053731875Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T21:58:45.053737787Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T21:58:45.053744242Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T21:58:45.053751573Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T21:58:45.053757280Z [err]  [2025-12-04 21:58:44 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T21:58:45.053763790Z [inf]  📊 STATISTIQUES:
+2025-12-04T21:58:45.053769617Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T21:58:46.273366146Z [inf]  Starting FRICTRAK API...
+2025-12-04T21:58:46.273372688Z [inf]  PORT: 8080
+2025-12-04T21:58:46.364993228Z [err]  [2025-12-04 21:58:46 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T21:58:46.365001841Z [err]  [2025-12-04 21:58:46 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T21:58:46.365008279Z [err]  [2025-12-04 21:58:46 +0000] [1] [INFO] Using worker: sync
+2025-12-04T21:58:46.365017556Z [err]  [2025-12-04 21:58:46 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T21:58:46.540352669Z [err]  [2025-12-04 21:58:46 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T21:58:46.540366754Z [err]  Traceback (most recent call last):
+2025-12-04T21:58:46.540373598Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T21:58:46.540380175Z [err]      worker.init_process()
+2025-12-04T21:58:46.540385752Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T21:58:46.540392137Z [err]      self.load_wsgi()
+2025-12-04T21:58:46.540398820Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T21:58:46.540406155Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T21:58:46.540412318Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T21:58:46.540418599Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T21:58:46.540424435Z [err]      self.callable = self.load()
+2025-12-04T21:58:46.540431213Z [err]                      ^^^^^^^^^^^
+2025-12-04T21:58:46.540436977Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T21:58:46.540442430Z [err]      return self.load_wsgiapp()
+2025-12-04T21:58:46.540447989Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:46.540454804Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T21:58:46.540460650Z [err]      return util.import_app(self.app_uri)
+2025-12-04T21:58:46.540466367Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:46.540472563Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T21:58:46.540478693Z [err]      mod = importlib.import_module(module)
+2025-12-04T21:58:46.540484152Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:46.540901131Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T21:58:46.540921340Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T21:58:46.540927166Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T21:58:46.540931431Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T21:58:46.540935329Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T21:58:46.540939557Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T21:58:46.540943426Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T21:58:46.540947212Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T21:58:46.540951692Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T21:58:46.540956522Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T21:58:46.540960378Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T21:58:46.540964443Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T21:58:46.540968463Z [err]  [2025-12-04 21:58:46 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T21:58:46.540972459Z [inf]  📊 STATISTIQUES:
+2025-12-04T21:58:46.540976169Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T21:58:46.540980092Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T21:58:46.540984011Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T21:58:46.908005696Z [err]  [2025-12-04 21:58:46 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T21:58:46.908010272Z [err]  [2025-12-04 21:58:46 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T21:58:46.908014551Z [err]  [2025-12-04 21:58:46 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T21:59:37.000000000Z [inf]  Stopping Container
+2025-12-04T22:02:10.000000000Z [inf]  Starting Container
+2025-12-04T22:02:11.948733184Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:11.948737764Z [inf]  PORT: 8080
+2025-12-04T22:02:11.948742364Z [err]  [2025-12-04 22:02:11 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:11.948746946Z [err]  [2025-12-04 22:02:11 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:11.948751826Z [err]  [2025-12-04 22:02:11 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:11.948757021Z [err]  [2025-12-04 22:02:11 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:11.948761942Z [err]  [2025-12-04 22:02:11 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:11.948766238Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:11.948770922Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:11.948792861Z [err]      worker.init_process()
+2025-12-04T22:02:11.948797575Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:11.948802488Z [err]      self.load_wsgi()
+2025-12-04T22:02:11.948807535Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:11.948824729Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:11.948832405Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:11.948839842Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:11.948847148Z [err]      self.callable = self.load()
+2025-12-04T22:02:11.948855166Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:11.948861252Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:11.948865726Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:11.948870457Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:11.948875173Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:11.950957367Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:11.950963193Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:11.951083176Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:11.951089878Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:11.951096449Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:11.951102669Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:11.951109959Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:11.951121828Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:11.951127119Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:11.951134952Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:11.951140216Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:11.951148769Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:11.951157648Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:11.951162846Z [err]  [2025-12-04 22:02:11 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:11.951166569Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:11.951173426Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:11.951180122Z [err]  [2025-12-04 22:02:11 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:11.951183845Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:11.951192855Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:11.951193084Z [err]  [2025-12-04 22:02:11 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:11.951199504Z [err]  [2025-12-04 22:02:11 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:11.951206256Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:11.951213020Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:11.951222442Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:11.951228817Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:12.000000000Z [inf]  Stopping Container
+2025-12-04T22:02:13.420216562Z [inf]  PORT: 8080
+2025-12-04T22:02:13.420367798Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:14.069475653Z [err]  [2025-12-04 22:02:13 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:14.069481824Z [err]  [2025-12-04 22:02:13 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:14.069488446Z [err]  [2025-12-04 22:02:13 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:14.069494079Z [err]  [2025-12-04 22:02:13 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:14.069500212Z [err]  [2025-12-04 22:02:13 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:14.069508079Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:14.069516427Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:14.069524025Z [err]      worker.init_process()
+2025-12-04T22:02:14.069531658Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:14.069538580Z [err]      self.load_wsgi()
+2025-12-04T22:02:14.069545618Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:14.069552650Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:14.069559148Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:14.069565875Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:14.069573086Z [err]      self.callable = self.load()
+2025-12-04T22:02:14.069579256Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:14.069585695Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:14.071092225Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:14.071099579Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:14.071105145Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:14.075577675Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:14.075587362Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:14.075594708Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:14.075603060Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:14.075609713Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:14.075615523Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:14.075621682Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:14.075629486Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:14.075638774Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:14.075644408Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:14.075650043Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:14.075657234Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:14.075663125Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:14.075667854Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:14.075673092Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:14.075678448Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:14.075684431Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:14.075691288Z [err]  [2025-12-04 22:02:13 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:14.075698320Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:14.075703365Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:14.076094840Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:14.076102118Z [err]  [2025-12-04 22:02:13 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:14.076104683Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:14.076108597Z [err]  [2025-12-04 22:02:13 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:14.076112013Z [err]  [2025-12-04 22:02:13 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:15.449510745Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:15.449523169Z [inf]  PORT: 8080
+2025-12-04T22:02:16.080329035Z [err]  [2025-12-04 22:02:15 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:16.080337942Z [err]      self.callable = self.load()
+2025-12-04T22:02:16.080341747Z [err]  [2025-12-04 22:02:15 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:16.080349368Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:16.080350007Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:16.080353465Z [err]  [2025-12-04 22:02:15 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:16.080359229Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:16.080364545Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:16.080366120Z [err]  [2025-12-04 22:02:15 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:16.080369460Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:16.080377038Z [err]  [2025-12-04 22:02:15 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:16.080388408Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:16.080390255Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:16.080398538Z [err]      worker.init_process()
+2025-12-04T22:02:16.080406088Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:16.080413916Z [err]      self.load_wsgi()
+2025-12-04T22:02:16.080422363Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:16.080429658Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:16.080436468Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:16.080443999Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:16.089386386Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:16.089393880Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:16.089400508Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:16.089408767Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:16.089414439Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:16.089420702Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:16.089426491Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:16.089434861Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:16.089440756Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:16.089447561Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:16.089455008Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:16.089461601Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:16.089468073Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:16.089475593Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:16.089481494Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:16.089487856Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:16.089494145Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:16.089500378Z [err]  [2025-12-04 22:02:15 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:16.089509624Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:16.089585658Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:16.090017025Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:16.090045822Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:16.090054850Z [err]  [2025-12-04 22:02:15 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:16.094783889Z [err]  [2025-12-04 22:02:15 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:16.094798137Z [err]  [2025-12-04 22:02:15 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:17.451382023Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:17.451389011Z [inf]  PORT: 8080
+2025-12-04T22:02:18.212590762Z [err]  [2025-12-04 22:02:17 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:18.212594672Z [err]  [2025-12-04 22:02:17 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:18.212599035Z [err]  [2025-12-04 22:02:17 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:18.212603233Z [err]  [2025-12-04 22:02:17 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:18.212607167Z [err]  [2025-12-04 22:02:17 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:18.212612079Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:18.212616822Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:18.212621675Z [err]      worker.init_process()
+2025-12-04T22:02:18.212625845Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:18.212629683Z [err]      self.load_wsgi()
+2025-12-04T22:02:18.212633511Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:18.212637179Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:18.212641318Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:18.212645008Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:18.212648691Z [err]      self.callable = self.load()
+2025-12-04T22:02:18.212652351Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:18.212656054Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:18.212673884Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:18.212679464Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:18.212683653Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:18.222466442Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:18.222472834Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:18.222478741Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:18.222484197Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:18.222489411Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:18.222495150Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:18.222500677Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:18.222506619Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:18.222512750Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:18.222519410Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:18.222525514Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:18.222531340Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:18.222538667Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:18.222544506Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:18.222550500Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:18.222556512Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:18.222564807Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:18.222571664Z [err]  [2025-12-04 22:02:17 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:18.222577491Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:18.222583447Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:18.225865404Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:18.225869865Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:18.225874495Z [err]  [2025-12-04 22:02:18 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:18.225879068Z [err]  [2025-12-04 22:02:18 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:18.225903865Z [err]  [2025-12-04 22:02:18 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:19.418886376Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:19.418893650Z [inf]  PORT: 8080
+2025-12-04T22:02:20.241144321Z [err]  [2025-12-04 22:02:19 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:20.241153860Z [err]  [2025-12-04 22:02:19 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:20.241161509Z [err]  [2025-12-04 22:02:19 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:20.241168690Z [err]  [2025-12-04 22:02:19 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:20.241176490Z [err]  [2025-12-04 22:02:19 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:20.241348836Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:20.241358182Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:20.241364455Z [err]      worker.init_process()
+2025-12-04T22:02:20.241371245Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:20.241378968Z [err]      self.load_wsgi()
+2025-12-04T22:02:20.241385591Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:20.241392398Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:20.241399191Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:20.241405662Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:20.241411884Z [err]      self.callable = self.load()
+2025-12-04T22:02:20.241418073Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:20.241424410Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:20.241442216Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:20.241449666Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:20.241456715Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:20.253381026Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:20.253386841Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:20.253393561Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:20.253397884Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:20.253403506Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:20.253408544Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:20.253413949Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:20.253419551Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:20.253425093Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:20.253430611Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:20.253437389Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:20.253441985Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:20.253446427Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:20.253451320Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:20.253456267Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:20.253462065Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:20.253475232Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:20.253481995Z [err]  [2025-12-04 22:02:19 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:20.253491327Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:20.253498534Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:20.261257135Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:20.261263185Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:20.261268299Z [err]  [2025-12-04 22:02:19 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:20.261274201Z [err]  [2025-12-04 22:02:19 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:20.261279894Z [err]  [2025-12-04 22:02:19 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:21.280912287Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:21.280917086Z [inf]  PORT: 8080
+2025-12-04T22:02:21.401489208Z [err]  [2025-12-04 22:02:21 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:21.401501676Z [err]  [2025-12-04 22:02:21 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:21.401510041Z [err]  [2025-12-04 22:02:21 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:21.406127860Z [err]  [2025-12-04 22:02:21 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:22.315926896Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:22.316043184Z [err]  [2025-12-04 22:02:21 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:22.316470523Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:22.316484437Z [err]      worker.init_process()
+2025-12-04T22:02:22.316496525Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:22.316506164Z [err]      self.load_wsgi()
+2025-12-04T22:02:22.316515732Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:22.316521648Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:22.316527199Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:22.316531261Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:22.316537315Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:22.316544494Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:22.316554041Z [err]      self.callable = self.load()
+2025-12-04T22:02:22.316560855Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:22.316570229Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:22.316583433Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:22.316598753Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:22.316607890Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:22.316618979Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:22.316625563Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:22.316632923Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:22.328172435Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:22.328177815Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:22.328182892Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:22.328187096Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:22.328191390Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:22.328196285Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:22.328201483Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:22.328205825Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:22.328210146Z [err]  [2025-12-04 22:02:21 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:22.328215000Z [err]  [2025-12-04 22:02:21 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:22.328219068Z [err]  [2025-12-04 22:02:21 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:22.328223068Z [err]  [2025-12-04 22:02:21 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:22.328833002Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:22.329053671Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:22.329062343Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:22.329068953Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:22.329076146Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:22.329082805Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:22.329089855Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:22.329098574Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:23.295024867Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:23.295032117Z [inf]  PORT: 8080
+2025-12-04T22:02:23.295041858Z [err]  [2025-12-04 22:02:23 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:23.295050049Z [err]  [2025-12-04 22:02:23 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:23.295058860Z [err]  [2025-12-04 22:02:23 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:23.295069546Z [err]  [2025-12-04 22:02:23 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:23.428396903Z [err]  [2025-12-04 22:02:23 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:23.428404864Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:23.428409933Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:23.428415120Z [err]      worker.init_process()
+2025-12-04T22:02:23.428419671Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:23.428424253Z [err]      self.load_wsgi()
+2025-12-04T22:02:23.428429925Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:23.428436719Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:23.428442634Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:23.428448980Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:23.428455136Z [err]      self.callable = self.load()
+2025-12-04T22:02:23.428461952Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:23.428467945Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:23.428473689Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:23.428478006Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:23.428483837Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:23.428489972Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:23.428496953Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:23.428502452Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:23.428508140Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:23.428513617Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:23.431797793Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:23.431809108Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:23.431819177Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:23.431825361Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:23.431831764Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:23.431837913Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:23.431849563Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:23.431855298Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:23.431862830Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:23.431868275Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:23.431874484Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:23.431880303Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:23.431886184Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:23.431892065Z [err]  [2025-12-04 22:02:23 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:23.431898007Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:23.431905123Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:23.431910733Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:24.278153298Z [err]  [2025-12-04 22:02:23 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:24.278159774Z [err]  [2025-12-04 22:02:23 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:24.278165756Z [err]  [2025-12-04 22:02:23 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:25.344417649Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:25.344425814Z [inf]  PORT: 8080
+2025-12-04T22:02:25.344433794Z [err]  [2025-12-04 22:02:24 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:25.344441023Z [err]  [2025-12-04 22:02:24 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:25.344447527Z [err]  [2025-12-04 22:02:24 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:25.344453021Z [err]  [2025-12-04 22:02:24 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:25.344458752Z [err]  [2025-12-04 22:02:25 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:25.344465629Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:25.344479804Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:25.344489995Z [err]      worker.init_process()
+2025-12-04T22:02:25.344497278Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:25.344504539Z [err]      self.load_wsgi()
+2025-12-04T22:02:25.344511281Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:25.344518111Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:25.344524274Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:25.344531280Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:25.344536609Z [err]      self.callable = self.load()
+2025-12-04T22:02:25.344541439Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:25.344547163Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:25.344553224Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:25.344558105Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:25.344562696Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:25.349843482Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:25.349849355Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:25.349856973Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:25.349863037Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:25.349868720Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:25.349874350Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:25.349880070Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:25.349887003Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:25.349892870Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:25.349898340Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:25.349903759Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:25.349909717Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:25.349915477Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:25.349921124Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:25.349927089Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:25.349933221Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:25.349938780Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:25.349944815Z [err]  [2025-12-04 22:02:25 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:25.349955735Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:25.349966227Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:25.353590480Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:25.353596314Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:25.380482223Z [err]  [2025-12-04 22:02:25 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:25.383101823Z [err]  [2025-12-04 22:02:25 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:25.383129796Z [err]  [2025-12-04 22:02:25 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:27.014082098Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:27.014087396Z [inf]  PORT: 8080
+2025-12-04T22:02:27.014093294Z [err]  [2025-12-04 22:02:26 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:27.014098324Z [err]  [2025-12-04 22:02:26 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:27.014103102Z [err]  [2025-12-04 22:02:26 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:27.014108387Z [err]  [2025-12-04 22:02:26 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:27.014113075Z [err]  [2025-12-04 22:02:26 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:27.014118316Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:27.014124028Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:27.014128544Z [err]      worker.init_process()
+2025-12-04T22:02:27.014133112Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:27.014136925Z [err]      self.load_wsgi()
+2025-12-04T22:02:27.014141883Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:27.014147076Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:27.014151787Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:27.014156380Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:27.014161319Z [err]      self.callable = self.load()
+2025-12-04T22:02:27.014165674Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:27.014170478Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:27.014174556Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:27.014179846Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:27.014189415Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:27.020906490Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:27.020910796Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:27.020914933Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:27.020919205Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:27.020923608Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:27.020928881Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:27.020935282Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:27.020940744Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:27.020946564Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:27.020951886Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:27.020957595Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:27.020964233Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:27.020970483Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:27.020976682Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:27.020982872Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:27.020987825Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:27.020993218Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:27.020998301Z [err]  [2025-12-04 22:02:26 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:27.021004387Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:27.021009814Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:27.025819593Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:27.025824897Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:27.053456252Z [err]  [2025-12-04 22:02:27 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:27.053461341Z [err]  [2025-12-04 22:02:27 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:27.053465863Z [err]  [2025-12-04 22:02:27 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:28.274091084Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:28.274149964Z [inf]  PORT: 8080
+2025-12-04T22:02:28.418149699Z [err]  [2025-12-04 22:02:28 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:28.418158484Z [err]  [2025-12-04 22:02:28 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:28.418165514Z [err]  [2025-12-04 22:02:28 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:28.428921057Z [err]  [2025-12-04 22:02:28 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:29.177295511Z [err]  [2025-12-04 22:02:28 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:29.177305508Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:29.177312214Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:29.177319018Z [err]      worker.init_process()
+2025-12-04T22:02:29.177326262Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:29.177333603Z [err]      self.load_wsgi()
+2025-12-04T22:02:29.177340396Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:29.177346699Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:29.177352612Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:29.177357905Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:29.177362145Z [err]      self.callable = self.load()
+2025-12-04T22:02:29.177366731Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:29.177370970Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:29.177375039Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:29.177379981Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:29.177386411Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:29.177391435Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:29.177397672Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:29.177402773Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:29.177408893Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:29.177414326Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:29.185511744Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:29.185518877Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:29.185527217Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:29.185535391Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:29.185543168Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:29.185552274Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:29.185561526Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:29.185569194Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:29.185577465Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:29.185585753Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:29.185593644Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:29.185602108Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:29.185609775Z [err]  [2025-12-04 22:02:28 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:29.185622016Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:29.185629954Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:29.185637758Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:29.185646142Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:29.185653566Z [err]  [2025-12-04 22:02:28 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:29.185661738Z [err]  [2025-12-04 22:02:28 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:29.185669159Z [err]  [2025-12-04 22:02:28 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:02:30.378184870Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:02:30.378195116Z [inf]  PORT: 8080
+2025-12-04T22:02:31.417385127Z [err]  [2025-12-04 22:02:30 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:02:31.417391702Z [err]  [2025-12-04 22:02:30 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:02:31.417398901Z [err]  [2025-12-04 22:02:30 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:02:31.417405887Z [err]  [2025-12-04 22:02:30 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:02:31.417414583Z [err]  [2025-12-04 22:02:30 +0000] [2] [ERROR] Exception in worker process
+2025-12-04T22:02:31.417420937Z [err]  Traceback (most recent call last):
+2025-12-04T22:02:31.417427338Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+2025-12-04T22:02:31.417433508Z [err]      worker.init_process()
+2025-12-04T22:02:31.417440297Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+2025-12-04T22:02:31.417446576Z [err]      self.load_wsgi()
+2025-12-04T22:02:31.417453036Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+2025-12-04T22:02:31.417460228Z [err]      self.wsgi = self.app.wsgi()
+2025-12-04T22:02:31.417467157Z [err]                  ^^^^^^^^^^^^^^^
+2025-12-04T22:02:31.417473792Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2025-12-04T22:02:31.421150537Z [err]      self.callable = self.load()
+2025-12-04T22:02:31.421161653Z [err]                      ^^^^^^^^^^^
+2025-12-04T22:02:31.421168779Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+2025-12-04T22:02:31.421174872Z [err]      return self.load_wsgiapp()
+2025-12-04T22:02:31.421181579Z [err]             ^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:31.421187171Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+2025-12-04T22:02:31.421564114Z [err]    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-12-04T22:02:31.421579442Z [err]    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2025-12-04T22:02:31.421591250Z [err]    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2025-12-04T22:02:31.421592655Z [err]    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2025-12-04T22:02:31.421603096Z [err]    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-12-04T22:02:31.421617662Z [err]    File "/app/app.py", line 18, in <module>
+2025-12-04T22:02:31.421624982Z [err]      from analyser_hybride import analyser_fichier_json, generer_rapport_txt
+2025-12-04T22:02:31.421637218Z [err]  ImportError: cannot import name 'analyser_fichier_json' from 'analyser_hybride' (/app/analyser_hybride.py)
+2025-12-04T22:02:31.421645460Z [err]  [2025-12-04 22:02:30 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T22:02:31.421653289Z [inf]  📊 STATISTIQUES:
+2025-12-04T22:02:31.421666916Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T22:02:31.421776611Z [err]      return util.import_app(self.app_uri)
+2025-12-04T22:02:31.421789392Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:31.421797760Z [err]    File "/usr/local/lib/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+2025-12-04T22:02:31.421801465Z [err]      return _bootstrap._gcd_import(name[level:], package, level)
+2025-12-04T22:02:31.421807847Z [err]      mod = importlib.import_module(module)
+2025-12-04T22:02:31.421811893Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:31.421817617Z [err]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T22:02:31.421821831Z [err]    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-12-04T22:02:31.421827131Z [err]    File "/usr/local/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-12-04T22:02:31.426229971Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T22:02:31.426234128Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T22:02:31.426239103Z [err]  [2025-12-04 22:02:30 +0000] [1] [ERROR] Worker (pid:2) exited with code 3
+2025-12-04T22:02:31.426243955Z [err]  [2025-12-04 22:02:31 +0000] [1] [ERROR] Shutting down: Master
+2025-12-04T22:02:31.426248298Z [err]  [2025-12-04 22:02:31 +0000] [1] [ERROR] Reason: Worker failed to boot.
+2025-12-04T22:03:46.000000000Z [inf]  Stopping Container
+2025-12-04T22:04:36.000000000Z [inf]  Stopping Container
+2025-12-04T22:05:09.000000000Z [inf]  Starting Container
+2025-12-04T22:05:10.031105070Z [err]  [2025-12-04 22:05:09 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T22:05:10.031141329Z [inf]  Starting FRICTRAK API...
+2025-12-04T22:05:10.031149392Z [inf]  PORT: 8080
+2025-12-04T22:05:10.031155588Z [err]  [2025-12-04 22:05:09 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T22:05:10.031170550Z [err]  [2025-12-04 22:05:09 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T22:05:10.031598518Z [err]  [2025-12-04 22:05:09 +0000] [1] [INFO] Using worker: sync
+2025-12-04T22:05:21.000000000Z [inf]  Stopping Container
+2025-12-04T23:53:59.181868575Z [err]    File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 852, in dispatch_request
+2025-12-04T23:53:59.181894282Z [err]      return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+2025-12-04T23:53:59.181902453Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T23:53:59.181911625Z [err]    File "/app/app.py", line 258, in preteurs_list
+2025-12-04T23:53:59.181920044Z [err]      "preteurs": list(PRETEURS_TOUS.keys())[:100]  # Limiter pour la réponse
+2025-12-04T23:53:59.182045951Z [err]  [2025-12-04 23:53:51,922] ERROR in app: Exception on /api/preteurs-list [GET]
+2025-12-04T23:53:59.182050441Z [err]  Traceback (most recent call last):
+2025-12-04T23:53:59.182055817Z [err]    File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1455, in wsgi_app
+2025-12-04T23:53:59.182059878Z [err]      response = self.full_dispatch_request()
+2025-12-04T23:53:59.182064075Z [err]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T23:53:59.182068301Z [err]    File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 869, in full_dispatch_request
+2025-12-04T23:53:59.182072434Z [err]      rv = self.handle_user_exception(e)
+2025-12-04T23:53:59.182076629Z [err]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T23:53:59.182080968Z [err]    File "/usr/local/lib/python3.11/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+2025-12-04T23:53:59.182084993Z [err]      return cors_after_request(app.make_response(f(*args, **kwargs)))
+2025-12-04T23:53:59.182088834Z [err]                                                  ^^^^^^^^^^^^^^^^^^
+2025-12-04T23:53:59.182093879Z [err]    File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 867, in full_dispatch_request
+2025-12-04T23:53:59.182097747Z [err]      rv = self.dispatch_request()
+2025-12-04T23:53:59.182102167Z [err]           ^^^^^^^^^^^^^^^^^^^^^^^
+2025-12-04T23:53:59.183847317Z [err]                       ^^^^^^^^^^^^^^^^^^
+2025-12-04T23:53:59.183852076Z [err]  AttributeError: 'list' object has no attribute 'keys'
+2025-12-04T23:55:49.000000000Z [inf]  Starting Container
+2025-12-04T23:55:49.858281135Z [err]  [2025-12-04 23:55:49 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-04T23:55:49.858292392Z [err]  [2025-12-04 23:55:49 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-04T23:55:49.858303067Z [err]  [2025-12-04 23:55:49 +0000] [1] [INFO] Using worker: sync
+2025-12-04T23:55:49.858309339Z [err]  [2025-12-04 23:55:49 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-04T23:55:49.858350006Z [inf]  Starting FRICTRAK API...
+2025-12-04T23:55:49.858354833Z [inf]  PORT: 8080
+2025-12-04T23:55:52.000000000Z [inf]  Stopping Container
+2025-12-04T23:55:59.557461200Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-04T23:55:59.557472035Z [inf]     - Prêteurs complémentaires : 44
+2025-12-04T23:55:59.557478467Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-04T23:55:59.557482898Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-04T23:55:59.557487226Z [err]  [2025-12-04 23:55:51 +0000] [1] [INFO] Shutting down: Master
+2025-12-04T23:55:59.557564891Z [err]  [2025-12-04 23:55:51 +0000] [1] [INFO] Handling signal: term
+2025-12-04T23:55:59.557569199Z [err]  [2025-12-04 23:55:51 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-04T23:55:59.557573269Z [inf]  📊 STATISTIQUES:
+2025-12-05T01:38:29.000000000Z [inf]  Starting Container
+2025-12-05T01:38:31.180682147Z [err]  [2025-12-05 01:38:29 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T01:38:31.180718346Z [inf]  Starting FRICTRAK API...
+2025-12-05T01:38:31.180726494Z [inf]  PORT: 8080
+2025-12-05T01:38:31.180735711Z [err]  [2025-12-05 01:38:29 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T01:38:31.180771670Z [err]  [2025-12-05 01:38:29 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T01:38:31.180786571Z [err]  [2025-12-05 01:38:29 +0000] [1] [INFO] Using worker: sync
+2025-12-05T01:38:33.716773519Z [err]  [2025-12-05 01:38:31 +0000] [1] [INFO] Handling signal: term
+2025-12-05T01:38:33.716778180Z [err]  [2025-12-05 01:38:31 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T01:38:33.716783301Z [inf]  📊 STATISTIQUES:
+2025-12-05T01:38:33.716789579Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T01:38:33.716794345Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T01:38:33.716799422Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T01:38:33.716804946Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T01:38:33.716810206Z [err]  [2025-12-05 01:38:31 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T01:38:39.000000000Z [inf]  Stopping Container
+2025-12-05T01:56:50.000000000Z [inf]  Starting Container
+2025-12-05T01:56:51.382203054Z [inf]  Starting FRICTRAK API...
+2025-12-05T01:56:51.382213534Z [inf]  PORT: 8080
+2025-12-05T01:56:51.382223634Z [err]  [2025-12-05 01:56:51 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T01:56:51.382229434Z [err]  [2025-12-05 01:56:51 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T01:56:51.382242847Z [err]  [2025-12-05 01:56:51 +0000] [1] [INFO] Using worker: sync
+2025-12-05T01:56:51.382251702Z [err]  [2025-12-05 01:56:51 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T01:57:06.000000000Z [inf]  Stopping Container
+2025-12-05T01:57:08.413042250Z [err]  [2025-12-05 01:56:59 +0000] [1] [INFO] Handling signal: term
+2025-12-05T01:57:08.413053262Z [err]  [2025-12-05 01:56:59 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T01:57:08.413053967Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T01:57:08.413065400Z [inf]  📊 STATISTIQUES:
+2025-12-05T01:57:08.413066666Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T01:57:08.413075058Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T01:57:08.413077186Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T01:57:08.413081287Z [inf]  ✅ Dossier sauvegardé: TEST123_INCONNU_INCONNU
+2025-12-05T01:57:08.413087499Z [inf]  🐻 Pedro reçoit 1 lignes de log
+2025-12-05T01:57:08.413097173Z [inf]     URL: https://margill.com/test
+2025-12-05T01:57:08.413098018Z [inf]     URL: 
+2025-12-05T01:57:08.413108656Z [inf]  ✅ Dossier sauvegardé: DEBUG001_TEST_USER
+2025-12-05T01:57:08.413110275Z [inf]  ✅ Dossier sauvegardé: LO51273_LEON_LEON
+2025-12-05T01:57:08.413118454Z [inf]  🐻 Pedro reçoit 2 lignes de log
+2025-12-05T01:57:08.413122739Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T01:57:08.413131113Z [inf]     URL: debug
+2025-12-05T01:57:08.413134621Z [err]  [2025-12-05 01:56:59 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T01:57:08.413139382Z [inf]  ✅ Dossier sauvegardé: LIVE_TEST_JEAN_TEST
+2025-12-05T01:57:08.413144745Z [inf]  🐻 Pedro reçoit 2 lignes de log
+2025-12-05T02:06:36.000000000Z [inf]  Starting Container
+2025-12-05T02:06:38.081235675Z [err]  [2025-12-05 02:06:36 +0000] [1] [INFO] Using worker: sync
+2025-12-05T02:06:38.081252443Z [err]  [2025-12-05 02:06:36 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T02:06:38.081650280Z [inf]  Starting FRICTRAK API...
+2025-12-05T02:06:38.081655028Z [inf]  PORT: 8080
+2025-12-05T02:06:38.081660552Z [err]  [2025-12-05 02:06:36 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T02:06:38.081665237Z [err]  [2025-12-05 02:06:36 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T02:06:41.000000000Z [inf]  Stopping Container
+2025-12-05T02:06:43.025868507Z [inf]  ✅ Rapport RPT_20251205_015829 sauvegardé en cache
+2025-12-05T02:06:43.025877619Z [inf]  ✅ Rapport RPT_20251205_015829 trouvé en cache mémoire
+2025-12-05T02:06:43.025883633Z [inf]  ✅ Rapport RPT_20251205_015829 trouvé en cache mémoire
+2025-12-05T02:06:43.025888854Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T02:06:43.025893551Z [inf]  ✅ Rapport RPT_20251205_020440 sauvegardé en cache
+2025-12-05T02:06:43.025898157Z [inf]  ❌ Rapport test non trouvé
+2025-12-05T02:06:43.025902575Z [err]  [2025-12-05 02:06:39 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T02:06:43.025960835Z [err]  [2025-12-05 02:06:39 +0000] [1] [INFO] Handling signal: term
+2025-12-05T02:06:43.025965284Z [err]  [2025-12-05 02:06:39 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T02:06:43.025969291Z [inf]  📊 STATISTIQUES:
+2025-12-05T02:06:43.025973139Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T02:06:43.025979474Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T02:06:43.025984147Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T02:06:43.025988237Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T02:06:43.025992339Z [inf]  ❌ Rapport TEST123 non trouvé
+2025-12-05T02:06:43.025996991Z [inf]  ✅ Rapport RPT_20251205_015740 sauvegardé en cache
+2025-12-05T02:06:43.026001636Z [inf]  ✅ Rapport RPT_20251205_015740 trouvé en cache mémoire
+2025-12-05T02:06:43.026005562Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T02:12:09.000000000Z [inf]  Starting Container
+2025-12-05T02:12:10.569401223Z [inf]  Starting FRICTRAK API...
+2025-12-05T02:12:10.569413145Z [inf]  PORT: 8080
+2025-12-05T02:12:10.569421048Z [err]  [2025-12-05 02:12:09 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T02:12:10.569428853Z [err]  [2025-12-05 02:12:09 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T02:12:10.569437352Z [err]  [2025-12-05 02:12:09 +0000] [1] [INFO] Using worker: sync
+2025-12-05T02:12:10.569445311Z [err]  [2025-12-05 02:12:09 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T02:12:11.784623805Z [err]  [2025-12-05 02:12:11 +0000] [1] [INFO] Handling signal: term
+2025-12-05T02:12:11.784637060Z [err]  [2025-12-05 02:12:11 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T02:12:11.784645320Z [inf]  📊 STATISTIQUES:
+2025-12-05T02:12:11.784652478Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T02:12:11.784659355Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T02:12:11.784668644Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T02:12:11.784675784Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T02:12:11.784682233Z [err]  [2025-12-05 02:12:11 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T02:12:13.000000000Z [inf]  Stopping Container
+2025-12-05T16:35:54.000000000Z [inf]  Starting Container
+2025-12-05T16:35:55.139014535Z [err]  [2025-12-05 16:35:54 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T16:35:55.139075366Z [inf]  Starting FRICTRAK API...
+2025-12-05T16:35:55.139083499Z [inf]  PORT: 8080
+2025-12-05T16:35:55.139089487Z [err]  [2025-12-05 16:35:54 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T16:35:55.139097149Z [err]  [2025-12-05 16:35:54 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T16:35:55.139103903Z [err]  [2025-12-05 16:35:54 +0000] [1] [INFO] Using worker: sync
+2025-12-05T16:35:57.000000000Z [inf]  Stopping Container
+2025-12-05T16:36:02.343233085Z [err]  [2025-12-05 16:35:57 +0000] [1] [INFO] Handling signal: term
+2025-12-05T16:36:02.343238907Z [err]  [2025-12-05 16:35:57 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T16:36:02.343244268Z [inf]  📊 STATISTIQUES:
+2025-12-05T16:36:02.343250006Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T16:36:02.343255080Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T16:36:02.343264583Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T16:36:02.343270289Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T16:36:02.343278578Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T16:36:02.343284072Z [inf]  ✅ Rapport RPT_20251205_021356 sauvegardé en cache
+2025-12-05T16:36:02.343289534Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T16:36:02.343296477Z [inf]  ✅ Rapport RPT_20251205_021629 sauvegardé en cache
+2025-12-05T16:36:02.343302596Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T16:36:02.343308724Z [inf]  ✅ Rapport RPT_20251205_022417 sauvegardé en cache
+2025-12-05T16:36:02.343314780Z [inf]  ✅ Dossier sauvegardé: JC51274_JOHANNE_JOHANNE
+2025-12-05T16:36:02.343320843Z [inf]  ✅ Rapport RPT_20251205_022849 sauvegardé en cache
+2025-12-05T16:36:02.343326653Z [err]  [2025-12-05 16:35:57 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T16:51:11.000000000Z [inf]  Starting Container
+2025-12-05T16:51:14.000000000Z [inf]  Stopping Container
+2025-12-05T16:51:18.282804617Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T16:51:18.282816165Z [err]  [2025-12-05 16:51:14 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T16:51:18.282821988Z [err]  [2025-12-05 16:51:13 +0000] [1] [INFO] Handling signal: term
+2025-12-05T16:51:18.282827587Z [err]  [2025-12-05 16:51:13 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T16:51:18.282831923Z [inf]  📊 STATISTIQUES:
+2025-12-05T16:51:18.282836573Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T16:51:18.282841012Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T16:51:18.282845451Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T16:56:45.000000000Z [inf]  Starting Container
+2025-12-05T16:56:47.138424772Z [inf]  Starting FRICTRAK API...
+2025-12-05T16:56:47.138433277Z [inf]  PORT: 8080
+2025-12-05T16:56:47.138440174Z [err]  [2025-12-05 16:56:45 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T16:56:47.138447828Z [err]  [2025-12-05 16:56:45 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T16:56:47.138455856Z [err]  [2025-12-05 16:56:45 +0000] [1] [INFO] Using worker: sync
+2025-12-05T16:56:47.138462868Z [err]  [2025-12-05 16:56:45 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T16:56:52.000000000Z [inf]  Stopping Container
+2025-12-05T16:56:53.011374612Z [err]  [2025-12-05 16:56:47 +0000] [1] [INFO] Handling signal: term
+2025-12-05T16:56:53.011382766Z [err]  [2025-12-05 16:56:47 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T16:56:53.011389497Z [inf]  📊 STATISTIQUES:
+2025-12-05T16:56:53.011396614Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T16:56:53.011404260Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T16:56:53.011410951Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T16:56:53.011417857Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T16:56:53.011424614Z [err]  [2025-12-05 16:56:47 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T17:08:28.000000000Z [inf]  Starting Container
+2025-12-05T17:08:29.157627312Z [inf]  Starting FRICTRAK API...
+2025-12-05T17:08:29.157632596Z [inf]  PORT: 8080
+2025-12-05T17:08:29.157638251Z [err]  [2025-12-05 17:08:28 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T17:08:29.157644758Z [err]  [2025-12-05 17:08:28 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T17:08:29.157650787Z [err]  [2025-12-05 17:08:28 +0000] [1] [INFO] Using worker: sync
+2025-12-05T17:08:29.157657171Z [err]  [2025-12-05 17:08:28 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T17:08:33.000000000Z [inf]  Stopping Container
+2025-12-05T17:08:39.095174363Z [err]  [2025-12-05 17:08:30 +0000] [1] [INFO] Handling signal: term
+2025-12-05T17:08:39.095304123Z [err]  [2025-12-05 17:08:30 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T17:08:39.095312186Z [inf]  📊 STATISTIQUES:
+2025-12-05T17:08:39.095316198Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T17:08:39.095320160Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T17:08:39.095324128Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T17:08:39.095327819Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T17:08:39.095331519Z [err]  [2025-12-05 17:08:31 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T17:19:28.000000000Z [inf]  Starting Container
+2025-12-05T17:19:28.635501390Z [inf]  Starting FRICTRAK API...
+2025-12-05T17:19:28.635507521Z [inf]  PORT: 8080
+2025-12-05T17:19:28.635512113Z [err]  [2025-12-05 17:19:28 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T17:19:28.635516651Z [err]  [2025-12-05 17:19:28 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T17:19:28.635520956Z [err]  [2025-12-05 17:19:28 +0000] [1] [INFO] Using worker: sync
+2025-12-05T17:19:28.635525670Z [err]  [2025-12-05 17:19:28 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T17:19:33.000000000Z [inf]  Stopping Container
+2025-12-05T17:19:40.517612172Z [inf]  📊 STATISTIQUES:
+2025-12-05T17:19:40.517619223Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T17:19:40.517625190Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T17:19:40.517631902Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T17:19:40.517638849Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T17:19:40.517650523Z [err]  [2025-12-05 17:19:31 +0000] [1] [INFO] Handling signal: term
+2025-12-05T17:19:40.517658035Z [err]  [2025-12-05 17:19:31 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T17:19:40.517666411Z [err]  [2025-12-05 17:19:31 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T17:25:37.000000000Z [inf]  Starting Container
+2025-12-05T17:25:38.276503388Z [inf]  Starting FRICTRAK API...
+2025-12-05T17:25:38.276514459Z [inf]  PORT: 8080
+2025-12-05T17:25:38.276526771Z [err]  [2025-12-05 17:25:37 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T17:25:38.276537039Z [err]  [2025-12-05 17:25:37 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T17:25:38.276547381Z [err]  [2025-12-05 17:25:37 +0000] [1] [INFO] Using worker: sync
+2025-12-05T17:25:38.276556865Z [err]  [2025-12-05 17:25:37 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T17:25:45.000000000Z [inf]  Stopping Container
+2025-12-05T17:25:51.463642849Z [err]  [2025-12-05 17:25:41 +0000] [1] [INFO] Handling signal: term
+2025-12-05T17:25:51.463647823Z [err]  [2025-12-05 17:25:41 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T17:25:51.463651853Z [inf]  📊 STATISTIQUES:
+2025-12-05T17:25:51.463656547Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T17:25:51.463661310Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T17:25:51.463665714Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T17:25:51.463669786Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T17:25:51.463673771Z [err]  [2025-12-05 17:25:41 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T17:52:09.000000000Z [inf]  Starting Container
+2025-12-05T17:52:10.712262975Z [inf]  Starting FRICTRAK API...
+2025-12-05T17:52:10.712267067Z [inf]  PORT: 8080
+2025-12-05T17:52:10.712271668Z [err]  [2025-12-05 17:52:09 +0000] [1] [INFO] Starting gunicorn 21.2.0
+2025-12-05T17:52:10.712276765Z [err]  [2025-12-05 17:52:09 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-12-05T17:52:10.712281440Z [err]  [2025-12-05 17:52:09 +0000] [1] [INFO] Using worker: sync
+2025-12-05T17:52:10.712285505Z [err]  [2025-12-05 17:52:09 +0000] [2] [INFO] Booting worker with pid: 2
+2025-12-05T17:52:20.752849004Z [err]  [2025-12-05 17:52:12 +0000] [1] [INFO] Handling signal: term
+2025-12-05T17:52:20.752853698Z [err]  [2025-12-05 17:52:12 +0000] [2] [INFO] Worker exiting (pid: 2)
+2025-12-05T17:52:20.752857473Z [inf]  📊 STATISTIQUES:
+2025-12-05T17:52:20.752861341Z [inf]     - Prêteurs officiels OPC : 370
+2025-12-05T17:52:20.752865295Z [inf]     - Prêteurs complémentaires : 44
+2025-12-05T17:52:20.752869754Z [inf]     - TOTAL PRÊTEURS : 414
+2025-12-05T17:52:20.752874980Z [inf]  Erreur lecture Excel: [Errno 2] No such file or directory: '/app/tableau_paiements.xlsx'
+2025-12-05T17:52:20.752880227Z [err]  [2025-12-05 17:52:12 +0000] [1] [INFO] Shutting down: Master
+2025-12-05T17:52:24.000000000Z [inf]  Stopping Container
