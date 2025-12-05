@@ -1,5 +1,11 @@
 (function () {
-  console.log("Overwatch v6.3 - MARGILL FIRST + PEDRO (VERCEL)");
+  console.log("Overwatch v7 - PRODUCTION");
+
+  // ============================================
+  // CONFIGURATION DES URLS
+  // ============================================
+  var RAILWAY_API = 'https://frictrak-production.up.railway.app';
+  var VERCEL_APP = 'https://www.frictrak.ca';
 
   // ============================================
   // TERMINAL COMPONENT
@@ -74,7 +80,7 @@
       justify-content: space-between;
       align-items: center;
     ">
-      <span>[*] OVERWATCH v6.3 VERCEL</span>
+      <span>[*] OVERWATCH v7 PRODUCTION</span>
       <div style="display: flex; gap: 5px;">
         <button id="terminal-pedro" style="
           background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%);
@@ -180,7 +186,7 @@
       logToTerminal('[>] Envoi des logs a Pedro...', 'info');
       logToTerminal('[>] ' + logData.logs.length + ' lignes de log', 'data');
 
-      var response = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/pedro-analyze', {
+      var response = await fetch(RAILWAY_API + '/api/pedro-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(logData)
@@ -522,7 +528,7 @@
           logToTerminal('[>] Sauvegarde Margill uniquement...', 'info');
 
           // Sauvegarder uniquement Margill
-          var response = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/save-dossier', {
+          var response = await fetch(RAILWAY_API + '/api/save-dossier', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -555,7 +561,7 @@
         // ETAPE 3: Recuperer les donnees Inverite via proxy
         logToTerminal('[3] Etape 3: Recuperation Inverite...', 'info');
 
-        var proxyResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/proxy/inverite', {
+        var proxyResponse = await fetch(VERCEL_APP + '/api/proxy/inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ guid: inveriteInfo.guid })
@@ -586,7 +592,7 @@
         // ETAPE 4: Sauvegarder les deux JSON dans un dossier
         logToTerminal('[4] Etape 4: Sauvegarde dossier...', 'info');
 
-        var saveResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/save-dossier', {
+        var saveResponse = await fetch(RAILWAY_API + '/api/save-dossier', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -611,7 +617,8 @@
         // ETAPE 5: Lancer l'analyse automatique
         logToTerminal('[5] Etape 5: Analyse automatique...', 'info');
 
-        var analyzeResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/analyze-inverite', {
+        // Appeler Vercel qui enrichit les données (pas Railway direct)
+        var analyzeResponse = await fetch(VERCEL_APP + '/api/analyze-inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(inveriteData)
@@ -627,9 +634,22 @@
               logToTerminal('[X] ' + analyzeResult.knockOuts + ' knock-out(s)', 'error');
             }
 
+            // Sauvegarder sur Vercel avant d'ouvrir
+            logToTerminal('[>] Sauvegarde rapport...', 'info');
+            var saveData = {
+              ...analyzeResult.data,
+              id: analyzeResult.id,
+              created_at: new Date().toISOString()
+            };
+            await fetch(VERCEL_APP + '/api/save-temp', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(saveData)
+            });
+
             // Ouvrir le rapport
             logToTerminal('[>] Ouverture rapport...', 'info');
-            window.open('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/rapport-simple/' + analyzeResult.id, '_blank');
+            window.open(VERCEL_APP + '/rapport-simple/' + analyzeResult.id, '_blank');
           }
         }
 
@@ -709,7 +729,7 @@
         btn.innerText = "[...] ANALYSE...";
         btn.disabled = true;
 
-        var proxyResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/proxy/inverite', {
+        var proxyResponse = await fetch(VERCEL_APP + '/api/proxy/inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ guid: guid })
@@ -718,7 +738,8 @@
         var proxyResult = await proxyResponse.json();
         var inveriteData = proxyResult.data;
 
-        var analyzeResponse = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/analyze-inverite', {
+        // Appeler Vercel qui enrichit les données
+        var analyzeResponse = await fetch(VERCEL_APP + '/api/analyze-inverite', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(inveriteData)
@@ -728,7 +749,20 @@
 
         if (analyzeResult.success) {
           logToTerminal('[+] Score: ' + analyzeResult.score + '/100', 'success');
-          window.open('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/rapport-simple/' + analyzeResult.id, '_blank');
+
+          // Sauvegarder sur Vercel avant d'ouvrir
+          var saveData = {
+            ...analyzeResult.data,
+            id: analyzeResult.id,
+            created_at: new Date().toISOString()
+          };
+          await fetch(VERCEL_APP + '/api/save-temp', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(saveData)
+          });
+
+          window.open(VERCEL_APP + '/rapport-simple/' + analyzeResult.id, '_blank');
         }
 
         btn.innerText = "[OK] TERMINE";
@@ -791,7 +825,7 @@
 
         var lendingText = document.body.innerText;
 
-        var response = await fetch('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/api/flinks-extension', {
+        var response = await fetch(VERCEL_APP + '/api/flinks-extension', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ overviewText: overviewText, lendingText: lendingText })
@@ -801,7 +835,22 @@
 
         if (result.success && result.id) {
           logToTerminal('[+] Dossier: ' + result.id, 'success');
-          window.open('https://frictrak-3twppqk60-freds-projects-fa05a114.vercel.app/rapport-simple/' + result.id, '_blank');
+
+          // Sauvegarder sur Vercel avant d'ouvrir
+          if (result.data) {
+            var saveData = {
+              ...result.data,
+              id: result.id,
+              created_at: new Date().toISOString()
+            };
+            await fetch(VERCEL_APP + '/api/save-temp', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(saveData)
+            });
+          }
+
+          window.open(VERCEL_APP + '/rapport-simple/' + result.id, '_blank');
         }
 
         btn.innerText = "[OK] TERMINE";
